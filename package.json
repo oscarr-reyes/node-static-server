@@ -1,0 +1,24 @@
+{
+  "name": "node-static-server",
+  "version": "0.1.0",
+  "description": "Host static server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nosthertus/node-static-server.git"
+  },
+  "keywords": [
+    "host",
+    "static",
+    "server"
+  ],
+  "author": "Nosthertus <nosthertus@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nosthertus/node-static-server/issues"
+  },
+  "homepage": "https://github.com/Nosthertus/node-static-server#readme"
+}
