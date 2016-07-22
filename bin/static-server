@@ -6,7 +6,8 @@
 var http 	= require("http"),
 	fs		= require("fs"),
 	path    = require("path"),
-	args    = require("./../lib/args.js");
+	args    = require("./../lib/args.js"),
+	mime    = require("mime");
 
 /*
  * Package settings
@@ -31,6 +32,10 @@ var server = http.createServer(function(req, res){
 	var readStream = fs.createReadStream(dir);
 
 	readStream.on("open", function(){
+		res.writeHead(200, {
+			"Content-Type": mime.lookup(dir)
+		});
+
 		readStream.pipe(res);
 	});
 
