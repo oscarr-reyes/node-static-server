@@ -28,7 +28,8 @@ var server = http.createServer(function(req, res){
 	});
 
 	readStream.on("error", function(err){
-		res.end(err);
+		console.log(err);
+		res.end("404 File not found!");
 	});
 });
 
