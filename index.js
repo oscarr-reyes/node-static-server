@@ -29,6 +29,7 @@ var server = http.createServer(function(req, res){
 
 	readStream.on("error", function(err){
 		console.log(err);
+		res.statusCode = 404;
 		res.end("404 File not found!");
 	});
 });
