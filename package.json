@@ -1,10 +1,13 @@
 {
-  "name": "node-static-server",
-  "version": "0.1.0",
-  "description": "Host static server",
+  "name": "static-server-stream",
+  "version": "0.2.0",
+  "description": "Host static server using streamable objects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "static-server": "bin/static-server"
   },
   "repository": {
     "type": "git",
@@ -13,7 +16,8 @@
   "keywords": [
     "host",
     "static",
-    "server"
+    "server",
+    "stream"
   ],
   "author": "Nosthertus <nosthertus@gmail.com>",
   "license": "MIT",
