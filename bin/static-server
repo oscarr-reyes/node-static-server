@@ -14,7 +14,8 @@ var http 	= require("http"),
  */
 var CONST = module.CONST = {
 	dir: path.resolve(args.d),
-	port: args.p
+	port: args.p,
+	entry: args.e
 };
 
 /*
@@ -25,6 +26,10 @@ var directory = require("./../lib/path.js");
 var server = http.createServer(function(req, res){
 	if(req.url == "/"){
 		req.url = "/index.html"
+	}
+
+	if(CONST.entry){
+		req.url = CONST.entry
 	}
 
 	var dir = directory.resolve(req.url);
