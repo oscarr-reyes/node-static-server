@@ -1,6 +1,6 @@
 {
   "name": "static-server-stream",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Host static server using streamable objects",
   "main": "index.js",
   "scripts": {

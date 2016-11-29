@@ -39,6 +39,18 @@ The key file for SSL
 
 The certification file for SSL
 
+* * *
+
+**--http-redirect** (Default: false):
+
+Whether the host should create a HTTP server for HTTPS redirection
+
+* * *
+
+**--from-http-server** (Default: 80)
+
+The port value where HTTP server will listen for redirection
+
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
