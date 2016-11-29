@@ -15,15 +15,19 @@ var http 	= require("http"),
 var CONST = module.CONST = {
 	dir: path.resolve(args.d),
 	port: args.p,
-	entry: args.e
+	entry: args.e,
+	ssl: args.s,
+	key: path.resolve(args.k),
+	cert: path.resolve(args.c)
 };
 
 /*
  * Libraries
  */
-var helper = require("./lib/helper.js");
+var helper	= require("./lib/helper.js"),
+	host	= require("./lib/host.js");
 
-var server = http.createServer(function(req, res){
+var request = function(req, res){
 	if(req.url == "/" && !CONST.entry){
 		req.url = "/index.html"
 	}
@@ -68,7 +72,11 @@ var server = http.createServer(function(req, res){
 			}
 		}
 	});
-});
+};
+
+var server = host.createServer();
+
+server.addListener("request", request);
 
 server.listen(CONST.port, function(){
 	console.log("Server listening at port:", CONST.port);
