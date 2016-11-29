@@ -21,6 +21,24 @@ Port to host the server
 
 Directory folder which the server will host
 
+* * *
+
+**-s --ssl** (Default: false):
+
+Whether should enable SSL protection to the server
+
+* * *
+
+**-k --key** (Default: null):
+
+The key file for SSL
+
+* * *
+
+**-c --cert** (Default: null):
+
+The certification file for SSL
+
 ## Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
