@@ -3,8 +3,7 @@
 /*
  * Main packages
  */
-var http 	= require("http"),
-	fs		= require("fs"),
+var fs		= require("fs"),
 	path    = require("path"),
 	args    = require("./lib/args.js"),
 	mime    = require("mime");
@@ -29,11 +28,11 @@ var helper	= require("./lib/helper.js"),
 
 var request = function(req, res){
 	if(req.url == "/" && !CONST.entry){
-		req.url = "/index.html"
+		req.url = "/index.html";
 	}
 
 	else if(!path.extname(req.url)){
-		req.url = CONST.entry
+		req.url = CONST.entry;
 	}
 
 	var dir = helper.resolve(req.url);
