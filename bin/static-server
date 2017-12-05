@@ -35,7 +35,7 @@ var request = function(req, res){
 		req.url = "/index.html"
 	}
 
-	else if(!path.extname(req.url)){
+	else if(!path.extname(req.url) && CONST.entry){
 		req.url = CONST.entry
 	}
 
