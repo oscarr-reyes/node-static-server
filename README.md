@@ -59,6 +59,6 @@ The port value where HTTP server will listen for redirection
 5. Submit a pull request
 
 ## Credits
-Oscar Reyes [Nosthertus]
+Oscar Reyes
 ## License
-[MIT](https://github.com/Nosthertus/node-playlist-extractor/blob/master/LICENSE.md)
+[MIT](https://github.com/oscarr-reyes/node-playlist-extractor/blob/master/LICENSE.md)
